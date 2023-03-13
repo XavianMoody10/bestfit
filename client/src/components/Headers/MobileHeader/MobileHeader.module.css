@@ -1,0 +1,49 @@
+/* Mobile Header */
+.mobileHeader {
+  display: none;
+  position: fixed;
+  height: 90vh;
+  width: 100%;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  padding: 20px;
+}
+
+.mobileHeader img {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.mobileHeader ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.mobileHeader ul * {
+  font-size: 2.5rem;
+}
+
+.mobileCloseIcon {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  font-size: 3rem;
+}
+
+@media (max-width: 700px) {
+  .mobileHeader {
+    display: flex;
+  }
+}
+
+@media (max-width: 446px) {
+  .mobileHeader img {
+    height: 120px;
+  }
+}
