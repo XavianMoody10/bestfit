@@ -1,0 +1,154 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+}
+
+.header img {
+  margin-bottom: 20px;
+}
+
+.header ul,
+.icons {
+  display: flex;
+}
+
+.header ul {
+  gap: 25px;
+}
+
+.link {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.icons {
+  gap: 20px;
+  font-size: 1.5rem;
+}
+
+.icons * {
+  cursor: pointer;
+}
+
+.mobileIcon {
+  display: none;
+  font-size: 2rem;
+}
+
+@media (max-width: 700px) {
+  .header ul,
+  .icons {
+    display: none;
+  }
+
+  .mobileIcon {
+    display: inline;
+  }
+
+  .header {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+}
+
+/* Search Header */
+.searchHeader {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+.searchHeader img {
+  margin-bottom: 20px;
+}
+
+.searchBar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.162);
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.searchBar input {
+  outline: none;
+  border: none;
+  padding: 5px;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.searchIcon,
+.searchCloseIcon {
+  font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .searchHeader {
+    display: none;
+  }
+}
+
+/* Mobile Header */
+.mobileHeader {
+  display: none;
+  position: fixed;
+  height: 90vh;
+  width: 100%;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  padding: 20px;
+}
+
+.mobileHeader img {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.mobileHeader ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.mobileHeader ul * {
+  font-size: 2.5rem;
+}
+
+.mobileCloseIcon {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  font-size: 3rem;
+}
+
+@media (max-width: 700px) {
+  .mobileHeader {
+    display: flex;
+  }
+}
+
+@media (max-width: 446px) {
+  .mobileHeader img {
+    height: 120px;
+  }
+}
